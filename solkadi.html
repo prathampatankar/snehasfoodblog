@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <meta charset="utf-8">
+    <link rel = "icon" href ="logo.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container topsection">
+      <div class="left title grid-item heading3">sneha's food blog</div>
+      <div class="right grid-item"><button class="btn1" id="open"><img class="image1" src="navbarbutton.svg"></button></div>
+    </div>
+    <div class="container">
+      <p class="heading3">sol kadi</p>
+      <img class="card2" src="solkadi.jpeg">
+      <p class="heading3">recipe</p>
+      <p class="recipe bodytext">
+        Ingredients:<br>
+        6-8 Kokum or Aamsol1 Cup Coconut,<br> grated1 Cup Hot water<br>
+        2 cloves Garlic or 1 tsp of ginger<br>
+        1-2 Green chilliesA pinch of Asafoetida (heeng)<br>
+        To taste Rock salt<br>
+        For garnishing Coriander leaves<br>
+        Instructions:<br>
+1.Soak the kokum in about 3/4th cup water adding the heeng and salt. Keep aside for 3 - 4 hours.<br>
+2.Grind the grated coconut, garlic and chillies together with little water in a blender or mixer. When it grinds to a thick paste like texture, squeeze the 'milk' out of the paste and keep aside.<br>
+3.Add another 3/4th cup of water to the dry remains and run the mixer again for a minute or so. Again extract the milk - adding to the original extract.<br>
+4.Repeat this process two to three times till basically all the 'milk' gets extracted from the coconut .<br>
+5.NOTE :This process can be repeated a couple of times, but bear in mind that the milk gets thinner with every consecutive extraction.<br>
+6.Discard the kokum from the water, add the coconut milk mixture into the kokum water, mix well to get a creamy pink coloured solkadhi.<br>
+7.Taste it and adjust seasoning as required.<br>
+8.Keep aside for an hour or more .<br>
+9.NOTE: It is important to let the Solkadhi rest for at least an hour before you consume it.<br>
+10.Garnish with fresh coriander leaves and serve chilled.<br>
+11.Chef's Tip : And remember to stir the Kadhi every time you serve it - the coconut extract tends to rise to the top when the kadhi is left untouched for a bit<br> Ingredients: Kokum or Aamsol, Coconut, Hot water, Garlic or 1 tsp of ginger, Green chillies, Asafoetida (heeng), Rock salt, Coriander
+      </p>
+    </div>
+    <footer class="footer">
+      <a class="mailid bodytext" href="mailto:snehaovhal757@gmail.com?subject=food blog">snehaovhal757@gmail.com</a>
+    </footer>
+    <div id="modalcontainer">
+      <div class="grid-container">
+        <div class="right grid-item"><button class="btn1" id="close"><img class="image1 closebutton"  src="navbarclose.svg"></button></div>
+        </div>
+        <div class="middlesection">
+          <div class="heading3">
+          <a href="index.html">home</a></div>
+        <div class="heading3"><a href="about.html">about</a></div>
+      <div class="heading3"><a href="login.html">login</a></div>
+        </div>
+        
+      </div>
+      <script>
+        window.onload=function(){
+const open = document.getElementById('open');
+const modalcontainer = document.getElementById('modalcontainer');
+const close = document.getElementById('close');
+open.addEventListener('click', () => {
+  modalcontainer.classList.add('show');
+  modalcontainer.classList.remove('hide');
+});
+close.addEventListener('click', () => {
+  modalcontainer.classList.remove('show');
+  modalcontainer.classList.add('hide');
+});}
+  </script>
+  </body>
+</html>

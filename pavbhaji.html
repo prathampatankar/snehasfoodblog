@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <meta charset="utf-8">
+    <link rel = "icon" href ="logo.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container topsection">
+      <div class="left title grid-item heading3">sneha's food blog</div>
+      <div class="right grid-item"><button class="btn1" id="open"><img class="image1" src="navbarbutton.svg"></button></div>
+    </div>
+    <div class="container">
+      <p class="heading3">Pav Bhaji</p>
+      <img class="card2" src="pavbhaji.jpeg">
+      <p class="heading3">Recipe</p>
+      <p class="recipe bodytext">
+        Ingredients:<br>
+2 carrots cubed<br>
+1 large potato peeled,cubed<br>
+2 capsicums( red+ green) chopped<br>
+1 sweet potato peeled,cubed<br>
+1 small beetroot peeled,cubed<br>
+2 cup cauliflower/broccoli florets<br>
+2 cup cabbage<br>
+2 medium onions finely chopped<br>
+4 tomatoes chopped<br>
+½ cup peas<br>
+2-3 tablespoon oil/butter<br>
+Spices:<br>
+3 tsp. ginger/garlic/chilli paste<br>
+1 tsp. turmeric<br>
+1 tsp. red chilli powder<br>
+2 tsp. coriander powder<br>
+2-3 tsp. pav bhaji masala<br>
+Salt as per taste<br>
+Coriander,lemon,butter for garnish<br>
+Instructions:
+ Chop all vegetables for the pav bhaji. Boil hard vegetables potatoes, carrots and beetroots for 15 mins with 3-4 cups of water and salt<br>
+Now, add broccoli and capsicums and let it come to a boil.<br>
+Add chopped cabbage to it. Cover and cook on slow flame until all vegetables are soft.<br>
+Mash the boiled veggies it using a blender or potato masher,keep it aside.<br>
+Heat oil/butter in a pan, add onions,ginger,garlic and chilli,saute until onions are golden brown.<br>
+Add the tomatoes with spices, let it cook for few minutes.<br>
+Add chopped tomato onion mix along with peas,to the boiled mash. Let it simmer for 15 mins.<br>
+Garnish with coriander,lemon and butter.
+Toast buns on a pan for best results and spread some butter on it.Serve pav with yummy bhaji
+      </p>
+    </div>
+    <footer class="footer">
+      <a class="mailid bodytext" href="mailto:snehaovhal757@gmail.com?subject=food blog">snehaovhal757@gmail.com</a>
+    </footer>
+    <div id="modalcontainer">
+      <div class="grid-container">
+        <div class="right grid-item"><button class="btn1" id="close"><img class="image1 closebutton"  src="navbarclose.svg"></button></div>
+        </div>
+        <div class="middlesection">
+          <div class="heading3">
+          <a href="index.html">home</a></div>
+        <div class="heading3"><a href="about.html">about</a></div>
+      <div class="heading3"><a href="login.html">login</a></div>
+        </div>
+        
+      </div>
+      <script>
+        window.onload=function(){
+const open = document.getElementById('open');
+const modalcontainer = document.getElementById('modalcontainer');
+const close = document.getElementById('close');
+open.addEventListener('click', () => {
+  modalcontainer.classList.add('show');
+  modalcontainer.classList.remove('hide');
+});
+close.addEventListener('click', () => {
+  modalcontainer.classList.remove('show');
+  modalcontainer.classList.add('hide');
+});}
+  </script>
+  </body>
+</html>

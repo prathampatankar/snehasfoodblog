@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <meta charset="utf-8">
+    <link rel = "icon" href ="logo.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid-container topsection">
+      <div class="left title grid-item heading3">sneha's food blog</div>
+      <div class="right grid-item"><button class="btn1" id="open"><img class="image1" src="navbarbutton.svg"></button></div>
+    </div>
+    <div class="container">
+      <p class="heading3">fish curry</p>
+      <img class="card2" src="fishcurry.jpeg">
+      <p class="heading3">Recipe</p>
+      <p class="recipe bodytext">
+        Equipment:<br>
+        pan<br>
+        Ingredients:<br>
+        5-6 medium fish cutlets<br>
+        4 tablespoon oil<br>
+        1 teaspoon cumin seeds<br>
+        1 medium onion (chopped)<br>
+        1 tablespoon ginger-garlic paste<br>
+        1 cup fresh tomato puree<br>
+        2 cups of water<br>
+        For garnish :<br>
+        chopped coriander (optional)<br>
+        Spices:<br>
+        1 tsp. turmeric powder<br>
+        1 tsp. chili powder or as per taste<br>
+        2 tsp. salt or as per taste<br>
+        1 tsp. garam masala powder or if using whole spices( bay leaf, or powdered green/black cardamom, 2-3 cloves,1 cinnamon stick)<br>
+        Instructions For cooking fish:<br>
+        Heat 1 tablespoon oil and cook the fish cutlets for 2-3 minutes on each side,keep aside.<br>
+        For fish Curry:<br>
+        Heat the remaining oil in pan.<br>
+        Add cumin seeds and whole spices, let them crackle. Add onion, ginger-garlic paste.Sauté until onions are golden brown.<br>
+        Add tomato puree, salt and sauté for 10 minutes.<br>
+        Now,add rest of the spices and sauté for 2 minutes.<br>
+        Add water and let it boil.<br>
+        Add the cooked fish pieces to the curry and simmer for 5 minutes.<br>
+        Garnishh with coriander, serve warm with rice or malabar parota.<br>
+      </p>
+    </div>
+    <footer class="footer">
+      <a class="mailid bodytext" href="mailto:snehaovhal757@gmail.com?subject=food blog">snehaovhal757@gmail.com</a>
+    </footer>
+    <div id="modalcontainer">
+      <div class="grid-container">
+        <div class="right grid-item"><button class="btn1" id="close"><img class="image1 closebutton"  src="navbarclose.svg"></button></div>
+        </div>
+        <div class="middlesection">
+          <div class="heading3">
+          <a href="index.html">home</a></div>
+        <div class="heading3"><a href="about.html">about</a></div>
+      <div class="heading3"><a href="login.html">login</a></div>
+        </div>
+        
+      </div>
+      <script>
+        window.onload=function(){
+const open = document.getElementById('open');
+const modalcontainer = document.getElementById('modalcontainer');
+const close = document.getElementById('close');
+open.addEventListener('click', () => {
+  modalcontainer.classList.add('show');
+  modalcontainer.classList.remove('hide');
+});
+close.addEventListener('click', () => {
+  modalcontainer.classList.remove('show');
+  modalcontainer.classList.add('hide');
+});}
+  </script>
+  </body>
+</html>
